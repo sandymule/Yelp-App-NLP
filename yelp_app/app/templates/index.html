@@ -1,0 +1,46 @@
+
+{% extends 'base.html' %}
+
+{% block body %}
+  <section class="header">
+    <h2 class="title">YELP Summary</h2>
+  </section>
+  <hr />
+
+  <div class="content">
+    <form method="POST">
+      {{ form.hidden_tag() }}
+      <div class="row">
+        <div>
+          {{ form.biz_name_input.label }} {{ form.biz_name_input() }}
+        </div>
+      </div>
+      <div class="row">
+        <button type="submit" class="button-primary">Submit</button>
+      </div>
+    </form>
+    {% if highlights_list %}
+    <table>
+      <tr> 
+        {% for highlight in highlights_list %}
+        <td>{{ highlight }}</td>
+        {% endfor %}
+      </tr>
+    </table>
+    <table>
+      {% for restaurant in restaurants %}
+        <tr>
+          <td>{{ restaurant }}</td>
+        </tr>
+      {% endfor %}
+      </table>
+    {% endif %}
+  </div>
+{% endblock body %}
+
+{% block js %}
+  <script type="text/javascript">
+  // your JS Code
+  // Your D3 code could be here
+  </script>
+{% endblock js %}

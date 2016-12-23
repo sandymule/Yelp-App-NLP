@@ -6,6 +6,15 @@ __pycache__/
 # C extensions
 *.so
 
+.DS_Store
+
+# Exclude Data Files
+*.zip
+StanfordData/
+Pickles/
+Data/
+WordList/
+
 # Distribution / packaging
 .Python
 env/
