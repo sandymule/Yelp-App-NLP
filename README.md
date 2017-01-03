@@ -9,9 +9,13 @@ Yelp Dataset Challenge - 2.7M reviews from major cities across the world.
 
 ##iPython Notebooks:
 Creating Businesses Dataframe.ipynb - creates the businesses dataframe from MongoDB
+
 GoogleWord2Vec.ipynb - Converting the Stanford and Google pretrained vector set into a format readable by Gensim package
+
 YelpData.ipynb - grabbing data from MongoDB, Preprocessing with CountVectorizer, LDA, and Word2Vec using both Google and Stanford pretrained vector set and Nearest Neighbor approach, TFIDF
+
 Similarities.ipynb - takes reviews and finds the closest matching restaurants (recommender)
+
 yelp_app/app - Flask app
 
 ##Final Presentation
